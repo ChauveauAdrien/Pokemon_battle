@@ -45,152 +45,75 @@ class Pokemon {
 
     public $attack4Damages = 0;
 
+    /** nom de l'attaque 1
+     * @var string
+     */
+
+    public $attack1 = "";
+
+    /** nom de l'attaque 2
+     * @var string
+     */
+
+    public $attack2 = "";
+
+    /** nom de l'attaque 3
+     * @var string
+     */
+
+    public $attack3 = "";
+
+    /** nom de l'attaque 4
+     * @var string
+     */
+
+    public $attack4 = "";
+
 
     /** construct du pokemon
      * @param string $name
      * @param string $type
      * @param int $health
+     * @param string $attack1
      * @param int $attack1Damages
+     * @param string $attack2
      * @param int $attack2Damages
+     * @param string $attack3
      * @param int $attack3Damages
+     * @param string $attack4
      * @param int $attack4Damages
      */
 
-    public function __construct(string $name, string $type, int $health, int $attack1Damages, int $attack2Damages, int $attack3Damages, int $attack4Damages) 
+    public function __construct(string $name, string $type, int $health, string $attack1, int $attack1Damages, string $attack2, int $attack2Damages, string $attack3, int $attack3Damages, string $attack4, int $attack4Damages) 
     {
         $this->name = $name;
         $this->type = $type;
         $this->health = $health;
+        $this->attack1 = $attack1;
         $this->attack1Damages = $attack1Damages;
+        $this->attack2 = $attack2;
         $this->attack2Damages = $attack2Damages;
+        $this->attack3 = $attack3;
         $this->attack3Damages = $attack3Damages;
+        $this->attack4 = $attack4;
         $this->attack4Damages = $attack4Damages;
     }
     
-    /** get le nom du pokemon
-     * @return string
-     */
+    /**
+    * Getter generique
+    */
 
-    public function getName() : string {
-        return $this->name;
+    public function __get($name) {
+        return $this->$name;
     }
 
-    /** get le type du pokemon
-     * @return string
-     */
+    /** setter generique
+    * 
+    */
 
-    public function geType() : string {
-        return $this->type;
-    }
-
-    /** get la santé du pokemon
-     * @return int
-     */
-
-    public function getHealth() : int {
-        return $this->health;
-    }
-
-    /** get les dommages de l'attaque 1
-     * @return int
-     */
-
-    public function getAttack1Damages() : int {
-        return $this->attack1Damages;
-    }
-
-    /** get les dommages de l'attaque 2
-     * @return int
-     */
-
-    public function getAttack2Damages() : int {
-        return $this->attack2Damages;
-    }
-
-    /** get les dommages de l'attaque 3
-     * @return int
-     */
-
-    public function getAttack3Damages() : int {
-        return $this->attack3Damages;
-    }
-
-    /** get les dommages de l'attaque 4
-     * @return int
-     */
-
-    public function getAttack4Damages() : int {
-        return $this->attack4Damages;
-    }
-
-    /** set le nom du pokemon
-     * @param string $name
-     * @return self
-     */
-
-    public function setName(string $name) : self {
-        $this->name = $name;
-        return $this;
-    }
-
-    /** set le type du pokemon
-     * @param string $type
-     * @return self
-     */
-
-    public function setType(string $type) : self {
-        $this->type = $type;
-        return $this;
-    }
-
-    /** set la santé du pokemon
-     * @param int $health
-     * @return self
-     */
-
-    public function setHealth(int $health) : self {
-        $this->health = $health;
-        return $this;
-    }
-
-    /** set les dommages de l'attaque 1
-     * @param int $attack1Damages
-     * @return self
-     */
-
-    public function setAttack1Damages(int $attack1Damages) : self {
-        $this->$attack1Damages = $attack1Damages;
-        return $this;
-    }
-
-    /** set les dommages de l'attaque 2
-     * @param int $attack2Damages
-     * @return self
-     */
-
-    public function setAttack2Damages(int $attack2Damages) : self {
-        $this->$attack2Damages = $attack2Damages;
-        return $this;
-    }
-
-    /** set les dommages de l'attaque 3
-     * @param int $attack3Damages
-     * @return self
-     */
-
-    public function setAttack3Damages(int $attack3Damages) : self {
-        $this->$attack3Damages = $attack3Damages;
-        return $this;
-    }
-
-    /** set les dommages de l'attaque 4
-     * @param int $attack3Damages
-     * @return self
-     */
-
-    public function setAttack4Damages(int $attack4Damages) : self {
-        $this->$attack4Damages = $attack4Damages;
-        return $this;
+    public function __set($name, $value)
+    {
+        $this->$name = $value;
     }
 
     /** va chercher une des 4 attaques selon le nombre en parametre
@@ -218,9 +141,9 @@ class Pokemon {
      */
 
      public function attacked($damagesSuffered) : self {
-        $this->setHealth($this->getHealth() - $damagesSuffered);
-        if($this->getHealth() < 0) {
-            $this->setHealth(0);
+        $this->__set('health',($this->__get('health') - $damagesSuffered));
+        if($this->__get('health') < 0) {
+            $this->__set('health', 0);
         }
         return $this;
      }
