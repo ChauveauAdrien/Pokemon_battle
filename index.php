@@ -1,13 +1,28 @@
 <?php
 
-require_once './classes/Pokemon.php';
+require_once __DIR__.'/includes/header.php';
 
-$pokemon1 = new Pokemon('Pikachu', 'elec', 300, 60, 40, 20, 10);
-$pokemon2 = new Pokemon('Dracofeu', 'feu', 200, 100, 80, 60, 40);
+?>
+<main class="main__wrapper">
+    <div class="main__top">
+        <div class="main__tchat">
+            <p>Bienvenue jeune dresseur ! <br>Es-tu prêt à entrer dans l'arène Pokemon Battle ?</p>
+        </div>
+    </div>
+    <div class="main__bottom">
+        <div class="main__btn btn-left">
+            <a class="btn__a" href="">Non</a>
+        </div>
+        <div class="main__btn btn-right">
+            <a class="btn__a" href="/vues/name.php">Oui</a>
+        </div>
+    </div>
 
+</main>
 
+<?php
 
-$pokemon1->attacked($pokemon2->attack());
+require_once __DIR__.'/includes/footer.php';
 
-
-print_r($pokemon1);
+?>
+    
