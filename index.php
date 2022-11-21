@@ -1,5 +1,4 @@
 <?php
-
 require_once __DIR__.'/includes/header.php';
 
 ?>
@@ -17,6 +16,17 @@ require_once __DIR__.'/includes/header.php';
             <a class="btn__a" href="/vues/name.php">Oui</a>
         </div>
     </div>
+require_once './classes/Pokemon.php';
+include 'vendor/autoload.php';
+
+$client = new GuzzleHttp\Client();
+$res = $client->request('GET', 'https://pokeapi.co/api/v2/pokemon-habitat/');
+echo $res->getStatusCode();
+// "200"
+echo $res->getHeader('content-type')[0];
+// 'application/json; charset=utf8'
+echo $res->getBody();
+// {"type":"User"...'
 
 </main>
 
