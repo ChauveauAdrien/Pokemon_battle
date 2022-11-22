@@ -1,6 +1,7 @@
 <?php
 
 require_once __DIR__.'/../includes/header.php';
+require_once __DIR__.'/../functions.php';
 
 ?>
 <main class="main__wrapper">

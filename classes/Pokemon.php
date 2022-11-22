@@ -3,7 +3,7 @@
 require_once 'Player.php';
 
 
-class Pokemon extends Player {
+class Pokemon {
 
 
     /** Nom du pokemon
