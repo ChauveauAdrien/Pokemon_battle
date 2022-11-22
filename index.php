@@ -1,5 +1,7 @@
 <?php
 require_once __DIR__.'/includes/header.php';
+require_once './classes/Pokemon.php';
+
 
 ?>
 <main class="main__wrapper">
@@ -20,17 +22,7 @@ require_once __DIR__.'/includes/header.php';
             </div>
         </a>
     </div>
-require_once './classes/Pokemon.php';
-include 'vendor/autoload.php';
 
-$client = new GuzzleHttp\Client();
-$res = $client->request('GET', 'https://pokeapi.co/api/v2/pokemon-habitat/');
-echo $res->getStatusCode();
-// "200"
-echo $res->getHeader('content-type')[0];
-// 'application/json; charset=utf8'
-echo $res->getBody();
-// {"type":"User"...'
 
 </main>
 
