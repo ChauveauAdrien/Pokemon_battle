@@ -7,25 +7,28 @@ require_once __DIR__.'/../includes/header.php';
     <div class="battle__top">
         <div class="battle__info">
             <div class="battle-info__top">
-                <div class="pokemon__info">
-                    <div class="info__top">
-                        <p>DRACAUFEU</p>
-                        <p>Lvl 54</p>
-                    </div>
-                    <div class="info__mid">
-                        <img src="../assets/img/Groupe 38.png" alt="barre de Pv de pokemon">
-                    </div>
-                    <div class="info__bottom">
-                        <p>250/250 Pv</p>
+            <div class="pokemon__info">
+                <div class="info__top">
+                    <p>DRACAUFEU</p>
+                    <p>Lvl 54</p>
+                </div>
+                <div class="info__mid">
+                    <p>PV</p>
+                    <div class="pv__container">
+                        <div class="pv"></div>
                     </div>
                 </div>
-                <div class="pokemon__plateforme">
-                    <img src="" alt="">
+                <div class="info__bottom">
+                    <p>250/250 Pv</p>
                 </div>
+            </div>
+            <div class="pokemon__plateforme">
+                <img src="" alt="">
+            </div>
             </div>
             <div class="battle-info__bottom">
                 <div class="battle__tchat">
-                    <p>XXX apparaît ...</p>
+                    <p>XXX a perdu 250 pv</p>
                 </div>
                 <div class="pokemon__plateforme">
                     <img src="" alt="">
@@ -36,7 +39,10 @@ require_once __DIR__.'/../includes/header.php';
                         <p>Lvl 54</p>
                     </div>
                     <div class="info__mid">
-                        <img src="../assets/img/Groupe 38.png" alt="barre de Pv de pokemon">
+                        <p>PV</p>
+                        <div class="pv__container">
+                            <div class="pv"></div>
+                        </div>
                     </div>
                     <div class="info__bottom">
                         <p>250/250 Pv</p>
