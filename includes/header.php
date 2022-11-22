@@ -7,5 +7,6 @@
     <title>Pokemon Battle </title>
     <!-- css -->
     <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/media_queries.css">
 </head>
 <body>
