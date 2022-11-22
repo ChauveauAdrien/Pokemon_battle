@@ -13,7 +13,7 @@ require_once __DIR__.'/../functions.php';
     </div>
     <div class="choice__bottom">
         <p>Choisis trois Pokemon pour former ton équipe !</p>
-        <form action="../vues/battle.php" method="POST" id="test">
+        <form action="../controllers/choice-controller.php" method="POST" id="test">
             <div class="pokemon__form">
                 <div>
                     <?php foreach($pokemonsArray as $key => $value) : ?> 
