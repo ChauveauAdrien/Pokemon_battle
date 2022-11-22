@@ -2,7 +2,6 @@
 require_once __DIR__.'/includes/header.php';
 require_once './classes/Pokemon.php';
 
-
 ?>
 <main class="main__wrapper">
     <div class="main__top">
@@ -22,8 +21,6 @@ require_once './classes/Pokemon.php';
             </div>
         </a>
     </div>
-
-
 </main>
 
 <?php

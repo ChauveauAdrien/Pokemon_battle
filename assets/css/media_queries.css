@@ -1,0 +1,47 @@
+/* Width */
+
+@media screen and (max-width: 1100px) {
+    body {
+      padding: 0px 10vw;
+    }
+  }
+
+@media screen and (max-width: 800px) {
+    body {
+      padding: 0px 0vw;
+      font-size: 18px;
+    }
+    .btn-left {
+        margin-right: 20px;
+    }
+    .btn-right {
+        margin-left: 20px;
+    
+    }
+  }
+
+@media screen and (max-width: 600px) {
+    .main__bottom {
+        flex-direction: column;
+    }
+    .btn-left {
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+    .btn-right {
+        margin-left: 0px;
+        margin-top: 20px;
+    
+    }
+    .main__tchat {
+        margin: 300px 10px 0px;
+    }
+  }
+
+/* Height */
+
+@media screen and (max-height: 800px){
+    .main__tchat {
+        margin: 250px 10px 0px;
+    }
+}
