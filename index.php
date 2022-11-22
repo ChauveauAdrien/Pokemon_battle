@@ -38,12 +38,16 @@ make_request(get_client(), "https://pokeapi.co/api/v2/pokemon/pikachu");
         </div>
     </div>
     <div class="main__bottom">
-        <div class="main__btn btn-left">
-            <a class="btn__a" href="">Non</a>
-        </div>
-        <div class="main__btn btn-right">
-            <a class="btn__a" href="/vues/name.php">Oui</a>
-        </div>
+        <a class="btn__a" href="">
+            <div class="main__btn btn-left">
+                Non
+            </div>
+        </a>
+        <a class="btn__a" href="/vues/name.php">
+            <div class="main__btn btn-right">
+                Oui
+            </div>
+        </a>
     </div>
 
 
