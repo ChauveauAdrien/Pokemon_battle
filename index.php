@@ -25,7 +25,7 @@ function make_request(Client $client,string $url) {
     $result = $response->getBody()->getContents();
     $resultObject = json_decode($result);
     $result = $resultObject;
-    pretty_print_r($result);
+    pretty_print_r($result->stats);
 }
 
 make_request(get_client(), "https://pokeapi.co/api/v2/pokemon/pikachu");
