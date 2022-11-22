@@ -83,6 +83,48 @@ body {
 
 }
 
+.name__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.dresseur_name {
+    font-size: 28px;
+}
+
+.name__form input[type='text']{
+    display: flex;
+    border: 5px solid #3D3C3E;
+    border-radius: 10px;
+    background: white;
+    padding: 20px 50px 20px 20px;
+    margin: 10px;
+    width: 100%;
+    font-size: 25px;
+    font-family: lores-15, sans-serif;
+}
+
+.name__form button {
+    border: none;
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    padding: 0px 30px;
+    font-size: 25px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.50);
+    background: #70B8E0;
+    color: antiquewhite;
+    font-family: lores-15, sans-serif;
+    width: 50%;
+    margin: auto;
+}
+
+.name__form button:hover {
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.50);
+}
+
 /* choice */
 .choice__top {
     background-image: url(../img/Groupe\ 36.png);
@@ -91,7 +133,55 @@ body {
     background-size: cover;
     height: 50vh;
 }
+.choice__bottom {
+    background-image: url(../img/Groupe\ 7.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
 
+.choice__bottom form {
+    display: inline-block;
+    border: 5px solid #3D3C3E;
+    border-radius: 10px;
+    background: white;
+    padding: 30px 20px 50px;
+    margin-top: 10px;
+    height: 300px;
+    overflow: scroll;
+}
+
+.pokemon__form {
+    display: flex;
+    justify-content: space-between;
+    width: 30vw;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid grey;
+}
+
+.choice__form__btn {
+    border: none;
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    padding: 0px 30px;
+    font-size: 25px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.50);
+    background: #70B8E0;
+    color: antiquewhite;
+    font-family: lores-15, sans-serif;
+}
+
+.choice__form__btn:hover {
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.50);
+}
 
 /* battle */
 
