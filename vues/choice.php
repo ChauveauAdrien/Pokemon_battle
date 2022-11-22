@@ -8,7 +8,7 @@ require_once __DIR__.'/../functions.php';
 <main class="main__wrapper">
     <div class="choice__top">
         <div class="main__tchat">
-            <p>Voila XXX te voici arrivé dans l'arène Pokemon Battle ! <br>Désormais, Choisis trois pokemon pour te battre :</p>
+            <p>Voila XXX te voici arrivé dans l'arène Pokemon Battle ! <br> Désormais, Choisis trois pokemon pour te battre :</p>
         </div>
     </div>
     <div class="choice__bottom">
@@ -24,8 +24,7 @@ require_once __DIR__.'/../functions.php';
             <?php endforeach; ?>
             </div>
         </form>
-        <button type="submit" form="test" class="choice__form__btn">Suivant</button>
-    </div>
+    <button type="submit" form="test" class="choice__form__btn">Suivant</button>
 
 </main>
 
