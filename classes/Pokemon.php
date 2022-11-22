@@ -78,13 +78,9 @@ class Pokemon {
      * @param int $attack1Damages
      * @param string $attack2
      * @param int $attack2Damages
-     * @param string $attack3
-     * @param int $attack3Damages
-     * @param string $attack4
-     * @param int $attack4Damages
      */
 
-    public function __construct(string $name, string $type, int $health, string $attack1, int $attack1Damages, string $attack2, int $attack2Damages, string $attack3, int $attack3Damages, string $attack4, int $attack4Damages) 
+    public function __construct(string $name, string $type, int $health, string $attack1, int $attack1Damages, string $attack2, int $attack2Damages) 
     {
         $this->name = $name;
         $this->type = $type;
@@ -93,10 +89,6 @@ class Pokemon {
         $this->attack1Damages = $attack1Damages;
         $this->attack2 = $attack2;
         $this->attack2Damages = $attack2Damages;
-        $this->attack3 = $attack3;
-        $this->attack3Damages = $attack3Damages;
-        $this->attack4 = $attack4;
-        $this->attack4Damages = $attack4Damages;
     }
     
     /**
@@ -131,7 +123,7 @@ class Pokemon {
      */
 
     public function attack() : int {
-        $attackNbr = rand(1,4);
+        $attackNbr = rand(1,2);
         return $this->getRandomAttackDamages($attackNbr);
     }
 
