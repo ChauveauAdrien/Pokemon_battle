@@ -15,15 +15,13 @@ require_once __DIR__.'/../functions.php';
         <p>Choisis trois Pokemon pour former ton équipe !</p>
         <form action="../controllers/choice-controller.php" method="POST" id="test">
             <div class="pokemon__form">
+            <?php foreach($pokemonsArray as $key => $value) : ?> 
                 <div>
-                    <?php foreach($pokemonsArray as $key => $value) : ?> 
-                        <input type="checkbox" name="<?=$key?>" value="<?=$value?>">
-                        <label for="<?=$key?>"><?=$value?></label>
-                        <p>Lvl 54</p>
-                    <?php endforeach; ?>
+                    <input type="checkbox" name="<?=$key?>" value="<?=$value?>">
+                    <label for="<?=$key?>"><?=$value?></label>
                 </div>
-
-                
+                <p>Lvl 54</p>
+            <?php endforeach; ?>
             </div>
         </form>
         <button type="submit" form="test" class="choice__form__btn">Suivant</button>

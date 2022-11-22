@@ -43,5 +43,25 @@ class Player {
     }
 
 
+    /** getter generique
+     * 
+     */
+
+    public function __get($name)
+    {
+        return $this->$name;
+    }
+
+
+    /** setter generique
+    * 
+    */
+
+    public function __set($name, $value)
+    {
+        $this->$name = $value;
+    }
+
+
 
 }

@@ -1,6 +1,8 @@
 <?php
 
 include '../vendor/autoload.php';
+require_once '../classes/Player.php';
+require_once '../classes/Pokemon.php';
 
 
 use GuzzleHttp\Client;
@@ -22,24 +24,35 @@ function make_request(Client $client,string $url) {
     $result = $response->getBody()->getContents();
     $resultObject = json_decode($result);
     $result = $resultObject;
-    $name = $result->name;
-    $attack1Damage = $result->stats[1]->base_stat;
-    $attack2Damages = $result->stats[3]->base_stat;
-    echo $name.'  '.$attack1Damage.'  '.$attack2Damages;
-    pretty_print_r($result->stats);
+    return $result;
 }
 
 
 if(isset($_POST) and !empty($_POST)) {
+    create_user();
+}
+
+
+function create_user() {
+    $user = new Player("0",0,0,0);
+    $user->__set('user_name', "Maxime");
     for ($i=1; $i < 4; $i++) { 
         $index = 'pokemon'.$i;
         $pokemon = $_POST[$index];
         $url =  'https://pokeapi.co/api/v2/pokemon/'.$pokemon;
-        make_request(get_client(), $url);
+        $result = make_request(get_client(), $url);
+        $name = $result->name;
+        $health = $result->stats[0]->base_stat;
+        $attack1Damages = $result->stats[1]->base_stat;
+        $attack2Damages = $result->stats[3]->base_stat;
+        $type = $result->types[0]->type->name;
+        $pokemon = new Pokemon($name,$type,$health,$attack1Damages ,$attack2Damages);
+        $attribute_to_modify = 'pokemon_'.$i;
+        $user->__set($attribute_to_modify, $pokemon);
     } 
-        
-   
+    print_r($user);
 }
+
 
 
 
