@@ -10,7 +10,7 @@ require_once __DIR__.'/../includes/header.php';
         </div>
     </div>
     <div class="main__bottom">
-        <form action="" method="POST">
+        <form action="../vues/battle.php" method="POST">
             <label for="dresseur_name">Choisis ton nom de dresseur</label> <br>
             <input type="text" id="dresseur_name" name="dresseur_name" value="" placeholder="Nom de dresseur">
             <button type="submit">Valider</button>

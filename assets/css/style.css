@@ -91,3 +91,130 @@ body {
     background-size: cover;
     height: 50vh;
 }
+
+
+/* battle */
+
+.battle__top {
+    background-image: url(../img/Rectangle\ 2.png);
+    background-position: center;    
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+}
+
+.battle-info__top {
+    display: flex;
+    justify-content: space-between;
+    height: 200px;
+}
+
+.pokemon__plateforme {
+    width: 250px;
+    height: 60px;
+    background: #5FDB76;
+    border: 1px solid #3D3C3E; 
+    border-radius: 200px / 50px; 
+    margin-top: 120px;
+    margin-right: 80px;
+    box-shadow: 0px 10px 20px 0px rgba(70,70,70,0.75);
+}
+
+.pokemon__info {
+    display: inline-block;
+    border: 5px solid #3D3C3E;
+    border-radius: 10px;
+    background: white;
+    width: 18vw;
+    height: 122px;
+    padding: 15px 35px 15px 15px;
+    margin: 30px 50px;
+}
+
+.info__top {
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+}
+
+.info__mid {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+    margin-bottom: 8px;
+}
+
+.info__bottom {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 22px;
+}
+
+.battle-info__bottom {
+    display: flex;
+    justify-content: space-between;
+    height: 200px;
+    margin-top: 50px;
+}
+
+.battle-info__bottom .pokemon__plateforme {
+    width: 300px;
+    height: 80px;
+    background: #5FDB76;
+    border: 1px solid #3D3C3E; 
+    border-radius: 280px / 80px; 
+    margin-top: 70px;
+    margin-left: 80px;
+    box-shadow: 0px 10px 20px 0px rgba(70,70,70,0.75);
+}
+
+.battle__tchat {
+    display: inline-block;
+    position: absolute;
+    top: 60px;
+    border: 5px solid #3D3C3E;
+    border-radius: 10px;
+    background: white;
+    padding: 20px 100px 20px 20px;
+    margin-top: 300px;
+    margin-left: 20px;
+    width: 30%;
+}
+
+.battle__bottom {
+    background-image: url(../img/Groupe\ 7.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 50vh;
+}
+
+.battle__btn__top {
+    display: flex;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 90px;
+    font-size: 25px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.50);
+    background: #DF5754;
+}
+
+.battle__btn__bottom {
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 30px;
+    font-size: 25px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.50);
+    background: #70B8E0;
+}
+
+.battle__btn__top:hover,
+.battle__btn__bottom:hover {
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.50);
+}
