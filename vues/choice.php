@@ -11,9 +11,12 @@ require_once __DIR__.'/../includes/header.php';
     </div>
     <div class="main__bottom">
         <form action="../vues/battle.php" method="POST">
-            <label for="dresseur_name">Choisis ton nom de dresseur</label> <br>
-            <input type="text" id="dresseur_name" name="dresseur_name" value="" placeholder="Nom de dresseur">
-            <button type="submit">Valider</button>
+            <input type="checkbox" name="dracaufeu" value="dracaufeu">
+            <label for="dresseur_name">Dracaufeu</label> <br>
+            <input type="checkbox" name="pikachu" value="pikachu">
+            <label for="dresseur_name">Pikachu</label> <br>
+            <input type="checkbox" name="tortank" value="tortank">
+            <label for="dresseur_name">Tortank</label> <br>
         </form>
     </div>
 
