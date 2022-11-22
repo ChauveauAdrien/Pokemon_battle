@@ -4,14 +4,31 @@ require_once __DIR__.'/includes/header.php';
 require_once './classes/Pokemon.php';
 include 'vendor/autoload.php';
 
-$client = new GuzzleHttp\Client();
-$res = $client->request('GET', 'https://pokeapi.co/api/v2/pokemon-habitat/');
-echo $res->getStatusCode();
-// "200"
-echo $res->getHeader('content-type')[0];
-// 'application/json; charset=utf8'
-echo $res->getBody();
-// {"type":"User"...'
+use GuzzleHttp\Client;
+
+
+function pretty_print_r($var): void {
+    echo '<pre>' . print_r($var, true) . '</pre>';
+}
+
+
+function get_client() {
+    $client = new Client([
+        'verify' => false,
+        'stream' => false,
+    ]);
+    return $client;
+}
+
+function make_request(Client $client,string $url) {
+    $response = $client->get($url);
+    $result = $response->getBody()->getContents();
+    $resultObject = json_decode($result);
+    $result = $resultObject;
+    pretty_print_r($result);
+}
+
+make_request(get_client(), "https://pokeapi.co/api/v2/pokemon/pikachu");
 
 ?>
 <main class="main__wrapper">
