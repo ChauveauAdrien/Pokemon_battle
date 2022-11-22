@@ -1,6 +1,6 @@
 <?php 
 
-class Pokemon {
+class Pokemon extends Player {
 
 
     /** Nom du pokemon
@@ -33,17 +33,6 @@ class Pokemon {
 
     public $attack2Damages = 0;
 
-    /** dommages de l'attaque 3
-     * @var int
-     */
-
-    public $attack3Damages = 0;
-
-    /** dommages de l'attaque 4
-     * @var int
-     */
-
-    public $attack4Damages = 0;
 
     /** nom de l'attaque 1
      * @var string
@@ -56,18 +45,6 @@ class Pokemon {
      */
 
     public $attack2 = "";
-
-    /** nom de l'attaque 3
-     * @var string
-     */
-
-    public $attack3 = "";
-
-    /** nom de l'attaque 4
-     * @var string
-     */
-
-    public $attack4 = "";
 
 
     /** construct du pokemon
@@ -108,7 +85,7 @@ class Pokemon {
         $this->$name = $value;
     }
 
-    /** va chercher une des 4 attaques selon le nombre en parametre
+    /** va chercher une des 2 attaques selon le nombre en parametre
      * @param int $nbr
      * @return int
      */

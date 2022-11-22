@@ -9,22 +9,22 @@ class Player {
     public $user_name = "";
 
     /** Pokemon 1 de l'utilisateur
-     * @var string
+     * @var class
      */
 
-    public $pokemon_1 = "";
+    public $pokemon_1;
 
     /** Pokemon 2 de l'utilisateur
-     * @var string
+     * @var class
      */
 
-    public $pokemon_2 = "";
+    public $pokemon_2;
 
     /** Pokemon 3 de l'utilisateur
-     * @var string
+     * @var class
      */
 
-    public $pokemon_3 = "";
+    public $pokemon_3;
 
 
     /** fonction construct de l'utilisateur
