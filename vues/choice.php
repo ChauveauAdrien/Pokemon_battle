@@ -10,13 +10,14 @@ require_once __DIR__.'/../includes/header.php';
         </div>
     </div>
     <div class="main__bottom">
-        <form action="../vues/battle.php" method="POST">
-            <input type="checkbox" name="dracaufeu" value="dracaufeu">
-            <label for="dresseur_name">Dracaufeu</label> <br>
+        <form action="../controllers/choice-controller.php" method="POST">
+            <input type="checkbox" name="dracaufeu" value="charizard">
+            <label for="dracaufeu">Dracaufeu</label> <br>
             <input type="checkbox" name="pikachu" value="pikachu">
-            <label for="dresseur_name">Pikachu</label> <br>
-            <input type="checkbox" name="tortank" value="tortank">
-            <label for="dresseur_name">Tortank</label> <br>
+            <label for="pikachu">Pikachu</label> <br>
+            <input type="checkbox" name="tortank" value="blastoise">
+            <label for="tortank">Tortank</label> <br>
+            <button type="submit">Valider mes choix</button>
         </form>
     </div>
 
