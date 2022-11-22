@@ -1,5 +1,8 @@
 <?php 
 
+require_once 'Player.php';
+
+
 class Pokemon extends Player {
 
 
