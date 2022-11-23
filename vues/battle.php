@@ -1,19 +1,26 @@
 <?php
 
 require_once __DIR__.'/../includes/header.php';
-require_once __DIR__.'/../functions.php';
+// require_once __DIR__.'/../functions.php';
 require_once __DIR__.'/../controllers/choice-controller.php';
 
 
 $user = create_user($_SESSION['name']);
 $ia = create_ia($pokemonsArray);
-
-// while(true){
-//     $current_infos = fight($user, $ia);
-//     sleep(5);
-// }
-
-// print_r($current_infos);
+$currentUserPokemonNbr = 1;
+$currentIaPokemonNbr = 1;
+$currentIaPokemon = 'pokemon_'.$currentIaPokemonNbr;
+$currentUserPokemon = 'pokemon_'.$currentUserPokemonNbr;
+while(($ia->pokemon_3->__get('health') > 0) and ($user->pokemon_3->__get('health')) > 0) {
+    $ia->$currentIaPokemon->attacked($user->$currentUserPokemon->attack());
+    $user->$currentUserPokemon->attacked($ia->$currentIaPokemon->attack());
+    if($ia->$currentIaPokemon->__get('health') <= 0 and $currentIaPokemonNbr < 3) {
+        $currentIaPokemonNbr++;
+    }
+    elseif($user->$currentUserPokemon->__get('health') <= 0 and $currentUserPokemonNbr < 3) {
+        $currentUserPokemonNbr++;
+    }
+}
 
  
 
