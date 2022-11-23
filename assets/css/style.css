@@ -157,6 +157,7 @@ body {
 
 .pokemon__form {
     display: flex;
+    /* flex-direction: column; */
     justify-content: space-between;
     width: 30vw;
     padding-bottom: 10px;
@@ -333,10 +334,10 @@ body {
 }
 
 .sprite-back {
-    height: 300%;
+    height: 250%;
 }
 .sprite-front {
-    height: 300%;
+    height: 250%;
 }
 
 /* Overlay */
