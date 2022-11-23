@@ -23,7 +23,7 @@ require_once __DIR__.'/../includes/header.php';
                 </div>
             </div>
             <div class="pokemon__plateforme">
-                <img src="" alt="">
+                <img class="sprite-front" src="../assets/img/charizard-back.png" alt="">
             </div>
             </div>
             <div class="battle-info__bottom">
@@ -31,7 +31,7 @@ require_once __DIR__.'/../includes/header.php';
                     <p>XXX a perdu 250 pv</p>
                 </div>
                 <div class="pokemon__plateforme">
-                    <img src="" alt="">
+                    <img class="sprite-back" src="../assets/img/charizard-back.png" alt="">
                 </div>
                 <div class="pokemon__info">
                     <div class="info__top">
