@@ -8,6 +8,14 @@ require_once __DIR__.'/../controllers/choice-controller.php';
 $user = create_user($_SESSION['name']);
 $ia = create_ia($pokemonsArray);
 
+// while(true){
+//     $current_infos = fight($user, $ia);
+//     sleep(5);
+// }
+
+// print_r($current_infos);
+
+ 
 
 
 ?>
@@ -17,7 +25,7 @@ $ia = create_ia($pokemonsArray);
             <div class="battle-info__top">
             <div class="pokemon__info">
                 <div class="info__top">
-                    <p>DRACAUFEU</p>
+                    <p><?= $ia->__get('pokemon_1')->__get('name') ?></p>
                     <p>Lvl 54</p>
                 </div>
                 <div class="info__mid">
@@ -31,7 +39,7 @@ $ia = create_ia($pokemonsArray);
                 </div>
             </div>
             <div class="pokemon__plateforme">
-                <img class="sprite-front" src="../assets/img/charizard-back.png" alt="">
+                <img class="sprite-front" src="<?= $ia->__get('pokemon_1')->__get('front_sprite')  ?>" alt="">
             </div>
             </div>
             <div class="battle-info__bottom">
@@ -39,11 +47,11 @@ $ia = create_ia($pokemonsArray);
                     <p>XXX a perdu 250 pv</p>
                 </div>
                 <div class="pokemon__plateforme">
-                    <img class="sprite-back" src="../assets/img/charizard-back.png" alt="">
+                    <img class="sprite-back" src="<?= $user->__get('pokemon_1')->__get('back_sprite') ?>" alt="">
                 </div>
                 <div class="pokemon__info">
                     <div class="info__top">
-                        <p>DRACAUFEU</p>
+                        <p><?= $user->__get('pokemon_1')->__get('name') ?></p>
                         <p>Lvl 54</p>
                     </div>
                     <div class="info__mid">
