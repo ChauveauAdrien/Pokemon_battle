@@ -30,7 +30,7 @@ $ia = create_ia($pokemonsArray);
                 </div>
             </div>
             <div class="pokemon__plateforme">
-                <img src="" alt="">
+                <img class="sprite-front" src="../assets/img/charizard-back.png" alt="">
             </div>
             </div>
             <div class="battle-info__bottom">
@@ -38,7 +38,7 @@ $ia = create_ia($pokemonsArray);
                     <p>XXX a perdu 250 pv</p>
                 </div>
                 <div class="pokemon__plateforme">
-                    <img src="" alt="">
+                    <img class="sprite-back" src="../assets/img/charizard-back.png" alt="">
                 </div>
                 <div class="pokemon__info">
                     <div class="info__top">

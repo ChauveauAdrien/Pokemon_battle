@@ -208,6 +208,9 @@ body {
     margin-top: 120px;
     margin-right: 80px;
     box-shadow: 0px 10px 20px 0px rgba(70,70,70,0.75);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
 
 .pokemon__info {
@@ -273,6 +276,9 @@ body {
     margin-top: 70px;
     margin-left: 80px;
     box-shadow: 0px 10px 20px 0px rgba(70,70,70,0.75);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
 
 .battle__tchat {
@@ -324,6 +330,13 @@ body {
 .battle__btn__top:hover,
 .battle__btn__bottom:hover {
     box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.50);
+}
+
+.sprite-back {
+    height: 300%;
+}
+.sprite-front {
+    height: 300%;
 }
 
 /* Overlay */
