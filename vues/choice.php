@@ -1,14 +1,17 @@
 <?php
 
 require_once __DIR__.'/../includes/header.php';
-require_once __DIR__.'/../functions.php';
+require_once __DIR__.'/../controllers/choice-controller.php';
+
+
+
 
 
 ?>
 <main class="main__wrapper">
     <div class="choice__top">
         <div class="main__tchat">
-            <p>Voila XXX te voici arrivé dans l'arène Pokemon Battle ! <br> Désormais, Choisis trois pokemon pour te battre :</p>
+            <p>Voila <?=$_SESSION['name']?> te voici arrivé dans l'arène Pokemon Battle ! <br> Désormais, Choisis trois pokemon pour te battre :</p>
         </div>
     </div>
     <div class="choice__bottom">

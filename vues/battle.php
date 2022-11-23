@@ -2,6 +2,12 @@
 
 require_once __DIR__.'/../includes/header.php';
 require_once __DIR__.'/../functions.php';
+require_once __DIR__.'/../controllers/choice-controller.php';
+
+
+$user = create_user($_SESSION['name']);
+$ia = create_ia($pokemonsArray);
+
 
 ?>
 <main class="main__wrapper">
@@ -59,7 +65,7 @@ require_once __DIR__.'/../functions.php';
                 Attaquer
             </div>
         </a>
-        <a class="btn__a" href="">
+        <a class="btn__a" href="../controllers/end_game.php">
             <div class="battle__btn__bottom">
                 Fuire
             </div>
