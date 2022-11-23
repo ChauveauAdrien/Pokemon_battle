@@ -4,7 +4,13 @@ require_once __DIR__.'/../includes/header.php';
 
 ?>
 <main class="main__wrapper">
+    
     <div class="battle__top">
+    <div class="overlay">
+        <p>Victoire</p>
+        <p>3 - 1</p>
+        
+    </div>
         <div class="battle__info">
             <div class="battle-info__top">
             <div class="pokemon__info">
@@ -53,17 +59,21 @@ require_once __DIR__.'/../includes/header.php';
         </div>
     </div>
     <div class="battle__bottom">
-        <a class="btn__a" href="../vues/result.php">
-            <div class="battle__btn__top">
-                Attaquer
+        <a class="btn__a" href="">
+            <div class="btn__replay">
+                Rejouer
             </div>
         </a>
         <a class="btn__a" href="">
-            <div class="battle__btn__bottom">
-                Fuire
+            <div class="btn__change">
+                Changer d'équipe
             </div>
         </a>
-        
+        <a class="btn__a" href="../index.php">
+            <div class="btn__quit">
+                Quitter
+            </div>
+        </a>  
     </div>
 
 </main>

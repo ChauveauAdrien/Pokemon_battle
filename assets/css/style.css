@@ -325,3 +325,59 @@ body {
 .battle__btn__bottom:hover {
     box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.50);
 }
+
+/* Overlay */
+
+.overlay {
+    height: 50vh;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: antiquewhite;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    cursor: pointer;
+}
+
+.overlay p:first-child {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.btn__replay {
+    display: flex;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 90px;
+    font-size: 25px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.50);
+    background: #DF5754;
+}
+.btn__change {
+    display: flex;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 90px;
+    font-size: 25px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.50);
+    background: #70B8E0;
+}
+.btn__quit {
+    display: flex;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 90px;
+    font-size: 25px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.50);
+    background: #DF5754;
+}

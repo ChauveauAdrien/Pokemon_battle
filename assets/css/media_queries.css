@@ -46,6 +46,9 @@
         margin-left: 20px;
     
     }
+    .battle__tchat {
+        width: 300px;
+    }
   }
 
 @media screen and (max-width: 600px) {
@@ -131,6 +134,32 @@
         justify-content: flex-end;
         font-size: 16px;
     }
+    .battle__tchat {
+        width: 200px;
+        top: 50px;
+        padding: 10px;
+    }
+    .battle-info__bottom .pokemon__plateforme {
+        border-radius: 150px / 80px; 
+    }
+    .pokemon__plateforme {
+        border-radius: 150px / 80px;
+    }
+    .btn__replay {
+        height: 80px;
+        padding: 0px 40px;
+        font-size: 18px;
+    }
+    .btn__change {
+        height: 80px;
+        padding: 0px 40px;
+        font-size: 18px;
+    }
+    .btn__quit {
+        height: 80px;
+        padding: 0px 40px;
+        font-size: 18px;
+    }
 }
 
 /* Height */
@@ -141,5 +170,16 @@
     }
     .choice__bottom form {
         height: 250px;
+    }
+    .battle__tchat {
+        top: 15px;
+    }
+    .battle-info__bottom .pokemon__plateforme {
+        margin-right: 10px;
+        width: 280px;
+        margin-top: 30px;
+    }
+    .battle-info__bottom .pokemon__info {
+        margin-top: 10px;
     }
 }
