@@ -49,22 +49,39 @@ class Pokemon {
 
     public $attack2 = "Attaque speciale";
 
+    /** image de face du Pokemon
+     * @var string
+     */
 
-    /** construct du pokemon
+    public $front_sprite = "";
+
+
+    /** image de dos du Pokemon
+     * @var string
+     */
+
+    public $back_sprite = "";
+
+
+    /** construct du pokemon 
      * @param string $name
      * @param string $type
      * @param int $health
      * @param int $attack1Damages
      * @param int $attack2Damages
+     * @param string $front_sprite
+     * @param string $back_sprite
      */
 
-    public function __construct(string $name, string $type, int $health, int $attack1Damages, int $attack2Damages) 
+    public function __construct(string $name, string $type, int $health, int $attack1Damages, int $attack2Damages, string $front_sprite, string $back_sprite) 
     {
         $this->name = $name;
         $this->type = $type;
         $this->health = $health;
         $this->attack1Damages = $attack1Damages;
         $this->attack2Damages = $attack2Damages;
+        $this->front_sprite = $front_sprite;
+        $this->back_sprite = $back_sprite;
     }
     
     /**

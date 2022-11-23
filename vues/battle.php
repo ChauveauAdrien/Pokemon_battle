@@ -9,6 +9,7 @@ $user = create_user($_SESSION['name']);
 $ia = create_ia($pokemonsArray);
 
 
+
 ?>
 <main class="main__wrapper">
     <div class="battle__top">

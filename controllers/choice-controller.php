@@ -58,7 +58,9 @@ function create_user(string $name) {
         $attack1Damages = $result->stats[1]->base_stat;
         $attack2Damages = $result->stats[3]->base_stat;
         $type = $result->types[0]->type->name;
-        $pokemon = new Pokemon($pokemon,$type,$health,$attack1Damages ,$attack2Damages);
+        $front_sprite = $result->sprites->front_default;
+        $back_sprite = $result->sprites->back_default;
+        $pokemon = new Pokemon($pokemon,$type,$health,$attack1Damages ,$attack2Damages, $front_sprite, $back_sprite);
         $attribute_to_modify = 'pokemon_'.$i;
         $i++;
         $user->__set($attribute_to_modify, $pokemon);
@@ -78,7 +80,9 @@ function create_ia($pokemonsArray) {
         $attack1Damages = $result->stats[1]->base_stat;
         $attack2Damages = $result->stats[3]->base_stat;
         $type = $result->types[0]->type->name;
-        $pokemon = new Pokemon($pokemon,$type,$health,$attack1Damages ,$attack2Damages);
+        $front_sprite = $result->sprites->front_default;
+        $back_sprite = $result->sprites->back_default;
+        $pokemon = new Pokemon($pokemon,$type,$health,$attack1Damages ,$attack2Damages, $front_sprite, $back_sprite);
         $attribute_to_modify = 'pokemon_'.$i;
         $ia->__set($attribute_to_modify, $pokemon);
         $i++;
