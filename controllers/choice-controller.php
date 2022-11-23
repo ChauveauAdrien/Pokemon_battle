@@ -9,7 +9,23 @@ $pokemonsArray = [
     1 => 'pikachu',
     2 => 'blastoise',
     3 => 'charizard',
-    4 => 'charmander'
+    4 => 'charmander',
+    5 => 'venusaur',
+    6 => 'pidgeot',
+    7 => 'nidoqueen',
+    8 => 'nidoking',
+    9 => 'alakazam',
+    10 => 'gengar',
+    11 => 'rapidash',
+    12 => 'onix',
+    13 => 'gyarados',
+    14 => 'lapras',
+    15 => 'eevee',
+    16 => 'dragonite',
+    17 => 'mewtwo',
+    18 => 'meganium',
+    19 => 'typhlosion',
+    20 => 'steelix'
 ];
 
 session_start();
